@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario</title>
+</head>
+<body>
+    <div><h2>Rellena tu CV</h2></div>
+
+    <form action="menu.html">
+    <div>
+        <label for="Nombre">Nombre</label> <br>
+        <input type="text" placeholder="Escribe tu nombre" > <br>
+        <label for="Apellidos">Apellidos</label><br>
+        <input type="text" placeholder="Escribe tus apellidos" style="width : 500px"><br>
+        <label for="Contraseña">Contraseña</label><br>
+        <input type="password"><br>
+        <label for="Confirmar">Confirme contraseña</label><br>
+        <input type="password"><br>
+        <label for="Identificacion">Identificacion</label><br>
+        <select name="Identificacion" id="">
+            <option value="Cedula">CC</option>
+            <option value="Tarjeta">TI</option>
+            <option value="Pasaporte">PA</option>
+            <option value="Registro">RC</option>
+        </select>
+        <input type="text"><br>
+
+        <label for="Sexo">Sexo</label><br>
+        <input type="radio" name="Sexo" value="1">Mujer <br>
+        <input type="radio" name="Sexo" value="2">Hombre <br>
+        <input type="radio" name="Sexo" value="3">No binario <br>
+        <input type="radio" name="Sexo" value="4">Helicoptero sovietico ruso <br>
+        <input type="radio" name="Sexo" value="5">Otro <br>
+        <input type="text" placeholder="Especifique">
+        
+        <br>
+        <br>
+        <label for="Foto">Incluir mi foto</label><br>
+        <input type="file" name="foto" accept=".jpg,.png,jpeg"><br>
+        <br>
+        <input type="checkbox" name="Estudiante" checked>Estudiante.... <br>
+
+        <table cellspacing="0" cellpadding="0">
+            <tr>
+            <td>
+            <fieldset> <legend>Datos personales</legend>
+            <label for="Departamento">Departamento</label><br>
+            <select name="Departamentos" id="">
+                <option value="Selecione">-Selecciona-</option>
+                <option value="Santander">Santander</option>
+                <option value="Cundinamarca">Cundinamarca</option>
+                <option value="Amazonas">Amazonas</option>
+                <option value="Cesar">Cesar</option>
+            </select>
+            <br>
+            <br>
+            <label for="Nacimiento">Fecha de nacimiento</label><br>    
+            <input type="text" style="width: 50px;" maxlength="2"> de 
+            <select name="Meses" id="">
+                <option value="Enero">Enero</option>
+                <option value="Febrero">Febrero</option>
+                <option value="Marzo">Marzo</option>
+                <option value="Abril">Abril</option>
+                <option value="Mayo">Mayo</option>
+                <option value="Junio">Junio</option>
+                <option value="Julio">Julio</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Septiembre">Septiembre</option>
+                <option value="Octubre">Octubre</option>
+                <option value="Noviembre">Noviembre</option>
+                <option value="Diciembre">Diciembre</option>
+            </select> de
+            <input type="text" style="width: 50px;" maxlength="2">
+            <br>
+            <br>
+            <label for="Temas">Temas de interes</label><br>
+            <select name="Temas" size="2" multiple size="10">
+
+                <option>Administracion de bases de Datos</option>
+                <option>Analisis y programacion</option>
+                <option>Arquitectura</option>
+                <option>Calidad</option>
+                <option>ERP, CRM, Business intelligence</option>
+                
+            </select>
+           
+            </fieldset>
+            </td>
+            </tr>
+            </table>
+            <br>
+            <button>Guardar Cambios</button>
+            <input type="submit"
+	         name="Eliminar"
+	         value="Eliminar"
+			 onclick=this.form.action="datos_usuario.html"
+			 >
+
+
+
+
+    </div>
+</form>
+</body>
+</html>
